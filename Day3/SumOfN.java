@@ -7,7 +7,6 @@ class SumOfN{
         for(int i=0;i<=n;i++){
             sum=sum+i;
         }
-        System.out.println("Sum of entered "+n+"  numbers is: "+sum );
-        System.out.println("Avg of entered "+n+" numbers is: "+(sum/n));
+        System.out.println("Sum of entered "+n+" natural numbers is: "+sum );
     }
 }

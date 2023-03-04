@@ -12,6 +12,7 @@ class SumOfOdd{
             i++;
             num+=2;
         }
+        
         System.out.println("Sum of "+n+" odd numbers is:"+sum);
     }
 }
