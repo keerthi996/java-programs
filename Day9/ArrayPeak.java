@@ -11,6 +11,12 @@ class ArrayPeak{
             a[i]=sc.nextInt();
         }
         for(int i=1;i<n;i++){
+            if(a[0]>a[1]){
+                System.out.println(a[0]);
+            }
+            if(a[n-1]>a[n-2]){
+                System.out.println(a[n-1]);
+            }
             if((a[i]>a[i-1])&&(a[i]>a[i+1])){
                 System.out.println(a[i]);
             }
