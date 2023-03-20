@@ -24,9 +24,7 @@ class SumOfElements{
         
         int length=n1>n2?n1:n2;
         int[] result=new int[length];
-        int xl=0;
-        int sum=0;
-        int k=0;
+        int xl=0,sum=0,k=0;
         if(n1<n2){
             xl=n2-n1;
             for(int i=n1-1,j=n2-1;i>=0;i--,j--){

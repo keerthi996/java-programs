@@ -1,0 +1,14 @@
+//Using hashCode() function
+import java.util.*;
+class HashCode{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String s1,s2;
+        System.out.println("Enter first string:");
+        s1=sc.next();
+        System.out.println("Enter second string:");
+        s2=sc.next();
+        System.out.println(s1.hashCode());
+        System.out.println(s2.hashCode());
+    }
+}
