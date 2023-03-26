@@ -5,7 +5,7 @@ import java.util.*;
 class MatrixMul{
     public static void main(String args[]){
         int a[][]={{1,2,3},{4,5,6}};
-        int b[][]={{7,8},{9,1},{3,5}};
+        int b[][]={{10,11},{20,21},{30,31}};
         int[][] c=new int[a.length][b[0].length];
         int sum=0;
         
