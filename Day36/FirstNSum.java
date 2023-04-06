@@ -1,10 +1,9 @@
 //to print fiirst n natural numbers using recursion;
 import java.util.*;
-class FirstN{
-    static int print(int n,int i){
+class FirstNSum{
+    static int sum(int n,int i){
         if(n>0){
-            System.out.println(i);
-            return print(n-1,i+1);
+            return i+sum(n-1,i+1);
         }
         return 0;
     }
@@ -12,7 +11,7 @@ class FirstN{
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter number:");
         int n=sc.nextInt();
-        print(n,1);
+        System.out.println(sum(n,1));
 
     }
 }
