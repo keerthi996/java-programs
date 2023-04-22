@@ -1,0 +1,9 @@
+//Brute Force approach
+Example1:
+    when a person forget his password containing 4 digits then he tries to find out his password by placing all possible combinations.
+    in the worst case it takes 10000 tries to find the perfect combination.
+Example2:
+    classical example in computer science is the travelling salesman problem.
+    suppose a salesman needs to visit 10 cities accross the country he needs to determine the minimum distance he can travel.
+    the BruteForse solution is to calculate total distance for every possible routes and then select the shortes one.
+    
