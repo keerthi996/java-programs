@@ -19,7 +19,7 @@ public class UpcastingAndDowncasting {
     public static void main(String [] args)
     {
         Parent p = new Child();
-        p.name = "GeeksforGeeks" ;
+        p.name = "KeerthiKudumula" ;
         System.out.println(p.name);
         p.method();
         Child c = (Child)p;
