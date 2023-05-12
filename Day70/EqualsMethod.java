@@ -9,7 +9,7 @@ class EqualsMethod{
         d2.weight=120.25;
         Duck2 d3 = new Duck2();
         System.out.println(d1.equals(d2));
-        System.out.println(d1.equals(d3)); 
+        System.out.println(d1.equals(d3));
     }
 }
 class Duck extends Object{
