@@ -1,0 +1,24 @@
+import java.util.regex.*;
+  
+public class FindMethod {
+    public static void main(String[] args)
+    {
+  
+        String regex = "\\d\\D\\d\\D";
+
+        Pattern pattern = Pattern.compile(regex);
+
+        String stringToBeMatched = "3a6o098";
+  
+        Matcher matcher = pattern.matcher(stringToBeMatched);
+  
+        System.out.println(matcher.find());
+
+        String stringToBeMatched1 = "566676";
+
+  
+       Matcher matcher2 = pattern.matcher(stringToBeMatched1);
+
+        System.out.println(matcher2.find());
+    }
+}
