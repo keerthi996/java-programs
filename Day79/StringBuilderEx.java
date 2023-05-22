@@ -1,49 +1,19 @@
-public class StringBuilderEx {
-    public static void  main(String[] args) {
-
-        StringBuilder str = new StringBuilder("java");
-
-        System.out.println(str);
-
-        str.append("programming");
-
-        System.out.println(str);
-
-        str.replace(2,3,"w");
-
-        System.out.println(str);
-
-        System.out.println(str.indexOf("p"));
-
-        System.out.println(str.delete(0, 2));
-
-        System.out.println(str.capacity());
-
-        str.delete(3,6);
-
-        System.out.println(str);
-
-        str.deleteCharAt(1);
-
-        System.out.println(str);
-
-        System.out.println(str.length());
-
-        System.out.println(str.lastIndexOf("m"));
-
-        System.out.println(str.insert(0,"hello"));
-
-        str.reverse();
-
-        System.out.println(str);
-
-        str.setCharAt(0,'k');
-
-        System.out.println(str);
-
-        System.out.println(str.substring(0,5));
-        
-        System.out.println(str.toString());
-
+/*StringBuilder in Java represents a mutable sequence of characters. Since the String Class in 
+Java creates an immutable sequence of characters, the StringBuilder class provides an
+alternative to String Class, as it creates a mutable sequence of characters.
+*/
+public class StringBuilderEx{
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Hello");
+        sb.append(" ");
+        sb.append("world!");
+        System.out.println(sb.toString()); // Output: "Hello world!"
+         
+        sb.insert(6, "beautiful ");
+        System.out.println(sb.toString()); // Output: "Hello beautiful world!"
+         
+        sb.reverse();
+        System.out.println(sb.toString()); // Output: "!dlrow lufituaeb olleH"
     }
 }
