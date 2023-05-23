@@ -10,5 +10,6 @@
             students.add("Aishu");  
                       
             System.out.println(students);  
+            System.out.println(students.length());
         }  
     }  
