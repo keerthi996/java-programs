@@ -4,7 +4,7 @@
  */
 public class Circle extends GeometryExample{
     int radius=0;
-    static double pie=2.14;
+    static double pie=3.14;
     Circle(int radius){
         this.radius=radius;
     }
