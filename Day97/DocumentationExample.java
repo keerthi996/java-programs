@@ -1,3 +1,6 @@
+/**
+ * this class is created to demonstrate the use of documentation
+ */
 public class DocumentationExample {
     public static void main(String[] args){
         add(4,5);
@@ -7,7 +10,7 @@ public class DocumentationExample {
     }
 
     /**
-     *
+     *this method will return the addition of two numbers
      * @param a
      * @param b
      */
@@ -16,7 +19,7 @@ public class DocumentationExample {
     }
 
     /**
-     *
+     *this method will return the difference of two numbers
      * @param a
      * @param b
      * @return integer
@@ -27,7 +30,7 @@ public class DocumentationExample {
     }
 
     /**
-     *
+     *this method returns the uppercase of the string
      * @param s
      * @return string
      * the uppercase of the string
@@ -37,6 +40,7 @@ public class DocumentationExample {
     }
 
     /**
+     * this method will return the product of two numbers
      * @see public
      * @param a
      * @param b
