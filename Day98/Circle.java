@@ -1,3 +1,7 @@
+/**
+ * this class extends GeometryExample class which has two methods area and perimeter
+ * this class specially used for calculating area and circumference of circle
+ */
 public class Circle extends GeometryExample{
     int radius=0;
     static double pie=2.14;

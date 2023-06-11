@@ -1,3 +1,7 @@
+/**
+ * this class extends GeometryExample class which has two methods area and perimeter
+ * this class specially used for calculating area and perimeter of Rectangle
+ */
 public class Rectangle extends GeometryExample{
     int length=0;
     int breadth=0;
