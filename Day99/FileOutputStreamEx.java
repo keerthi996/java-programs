@@ -11,6 +11,7 @@ class FileOutputStreamEx{
     public static void main(String[] args)throws IOException{
         FileOutputStream fos=new FileOutputStream("Hello.txt",true);
         String s="How are You?";
+        
         byte[] b=s.getBytes();
         fos.write(b);
         fos.close();
