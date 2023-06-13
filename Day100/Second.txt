@@ -1,1 +1,1 @@
-Hi...this is second tex fileHi...this is second tex file
+this is the line added through charArryWriter
