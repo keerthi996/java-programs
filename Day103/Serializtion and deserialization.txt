@@ -1,0 +1,15 @@
+        Serialization: Serialization is the process of converting an object into a stream of
+        bytes so that it can be stored in a file, sent over a network, or saved in a persistent
+        storage. To make a class serializable, it needs to implement the Serializable
+        interface, which is a marker interface that indicates that the class can be serialized.
+        When an object is serialized, all of its non-transient fields (fields not marked with
+        the transient keyword) and their values are converted into a byte stream.
+        The ObjectOutputStream class is used to write objects to an output stream.
+
+    Deserialization: Deserialization is the reverse process of serialization.
+    It involves reconstructing an object from a byte stream. The byte stream is read from a
+    file, network stream, or any other source. The ObjectInputStream class is used to read
+    objects from an input stream. During deserialization, the byte stream is converted back
+     into an object by restoring its state and values of its fields. The class of the object
+      being deserialized must be available in the classpath; otherwise, a
+      ClassNotFoundException will be thrown.
