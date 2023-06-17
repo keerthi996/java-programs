@@ -1,0 +1,18 @@
+In Java, a record is a special type of class declaration aimed at reducing the boilerplate
+code. Java records were introduced with the intention to be used as a fast way to create
+data carrier classes, i.e. the classes whose objective is to simply contain data and carry
+it between modules, also known as POJOs (Plain Old Java Objects) and
+DTOs (Data Transfer Objects).
+Boilerplate code refers to sections of code that are repetitive, standardized, and
+required to accomplish a certain task in a programming language or framework. It is
+code that needs to be written over and over again, with little or no variation, to achieve
+common functionalities.
+
+ Properties of Records
+
+    * You can use nested classes and interfaces inside a record.
+    * You can have nested records too, which will implicitly be static.
+    * A record can implement interfaces.
+    * You can create a generic record class.
+    * It is possible to use local record classes (since Java SE 15).
+    * Records are serializable.
