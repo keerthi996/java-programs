@@ -1,0 +1,13 @@
+***GARBAGE COLLECTION:
+
+Java objects are created on the heap, which is a section of memory dedicated to a program. When objects are no longer needed, the garbage collector finds and tracks these unused objects and deletes them to free up space. Without garbage collection, the heap would eventually run out of memory, leading to a runtime OutOfMemoryError.
+
+You can make objects inaccessible in the following ways:
+
+    Create an object inside a method: After methods are executed, all objects called within those methods become unreachable, which makes them eligible for garbage collection.
+
+    Nullify the reference variable: You can change a reference variable to NULL. As long as all references to an object are removed, that object will become unreachable, which lets the garbage collector know the object can be removed.
+
+    Reassign the reference variable: Instead of nullifying the reference variable, you can also reassign the reference to another object. Once again, as long as all references to an object are removed, either through making reference variables NULL or reassigning them, the object will become inaccessible, leading to it being removed during the garbage collection process.
+
+    Create an anonymous object: An anonymous object doesn’t have a reference, so the garbage collector will mark and remove it during the next garbage collection cycle.
