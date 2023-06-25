@@ -8,7 +8,7 @@ import org.w3c.dom.ls.LSOutput;
 public class GarbageCollectingEx3 {
     public static void main(String[] args){
         printObj();
-        
+
     }
     public static void printObj(){
         Student s=new Student("Keerthi");
