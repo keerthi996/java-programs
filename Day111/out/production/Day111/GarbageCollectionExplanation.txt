@@ -1,0 +1,27 @@
+Garbage collection in Java is an automatic memory management feature that frees up memory by reclaiming objects that are no longer in use. It eliminates the need for manual memory management, such as deallocating objects explicitly, as in languages like C or C++. The Java Virtual Machine (JVM) is responsible for performing garbage collection.
+
+Here's how garbage collection works in Java:
+
+1. Allocation: When you create an object in Java using the `new` keyword, memory is allocated for that object on the heap. The heap is a portion of memory dedicated to storing objects dynamically.
+
+2. Marking: The garbage collector periodically scans the heap to identify objects that are still in use. It starts by marking all objects that are directly or indirectly referenced by active threads, called the "root" objects.
+
+3. Reachability: After marking the root objects, the garbage collector traverses the object graph, following references from the root objects to other objects. It marks each object it encounters as reachable.
+
+4. Unreachable objects: Objects that are not marked as reachable are considered unreachable or garbage. These objects are candidates for garbage collection.
+
+5. Reclamation: The garbage collector reclaims the memory occupied by the garbage objects. It frees up the memory so that it can be reused for future object allocations.
+
+Java employs different garbage collection algorithms to perform memory reclamation. Some common garbage collection algorithms used in the JVM are:
+
+- **Mark and Sweep**: This algorithm involves marking reachable objects and then sweeping the entire heap to reclaim memory occupied by unreachable objects.
+
+- **Copying**: The heap is divided into two equal-sized regions: the "from" space and the "to" space. Objects that are still in use are copied from the "from" space to the "to" space, and the "from" space is entirely cleared.
+
+- **Generational**: This algorithm divides the heap into different generations based on the age of objects. Younger objects that are likely to have shorter lifetimes are placed in one generation, while longer-lived objects are placed in another. Garbage collection is performed more frequently on the younger generation, known as the "eden" or "young" space.
+
+- **Concurrent**: This algorithm allows the garbage collector to run concurrently with the application threads, minimizing pauses in application execution. It is designed to collect garbage while the application is still running.
+
+The choice of garbage collection algorithm depends on factors such as the size of the heap, the application's performance requirements, and the available system resources.
+
+Java provides several options for configuring garbage collection behavior through JVM flags and tuning parameters. Developers can adjust these settings to optimize garbage collection performance based on the specific requirements of their applications.
