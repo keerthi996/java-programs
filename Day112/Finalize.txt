@@ -1,0 +1,27 @@
+In Java, the `finalize()` method is a special method defined in the `Object` class. It is called by the garbage collector (GC) before reclaiming the memory occupied by an object that is eligible for garbage collection. The purpose of the `finalize()` method is to provide a way for objects to perform any necessary cleanup actions or resource deallocation before they are destroyed.
+
+Here is the basic structure of the `finalize()` method:
+
+```java
+protected void finalize() throws Throwable {
+    // Cleanup actions and resource deallocation
+    // ...
+    super.finalize(); // Call the finalize() method of the superclass (Object)
+}
+```
+
+Some important points to note about the `finalize()` method:
+
+1. Execution and Invocation: The `finalize()` method is automatically invoked by the garbage collector when it determines that there are no more references to an object. It is not called explicitly in user code.
+
+2. Purpose: The `finalize()` method allows objects to release resources like open files, network connections, or perform any necessary cleanup actions. However, it is generally recommended to explicitly release resources using appropriate mechanisms (e.g., `close()` method) instead of relying solely on the `finalize()` method.
+
+3. Inefficiency and Deprecation: The `finalize()` method has some drawbacks. It is not guaranteed to be called promptly or at all, and its invocation can cause delays in garbage collection. Due to these issues and better alternatives, starting from Java 9, the `finalize()` method has been deprecated, and its use is discouraged.
+
+4. Object Class: The `finalize()` method is defined in the `Object` class, and all Java objects inherit it. Therefore, any class can override the `finalize()` method to provide custom cleanup behavior.
+
+5. Exception Handling: The `finalize()` method declares `Throwable` in its throws clause, indicating that it can throw any exception. Therefore, when overriding the method, you need to handle or propagate exceptions properly.
+
+It's important to note that relying on the `finalize()` method for critical cleanup or resource deallocation is not recommended. Instead, it is recommended to use explicit resource management, such as try-with-resources or manual resource closing, to ensure timely and deterministic cleanup.
+
+As of Java 9, the `finalize()` method has been deprecated, and developers are encouraged to use alternatives like the `AutoCloseable` interface or explicit cleanup methods to manage resources more effectively.
