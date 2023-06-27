@@ -1,0 +1,19 @@
+Java 15 introduces a new preview feature that allows us to control the inheritance. 
+
+Java Sealed Class
+
+Java 15 introduced the concept of sealed classes. It is a preview feature. Java sealed classes and interfaces restrict that which classes and interfaces may extend or implement them.
+
+In other words, we can say that the class that cannot be inherited but can be instantiated is known as the sealed class. It allows classes and interfaces to have more control over their permitted subtypes. It is useful both for general domain modeling and for building a more secure platform for libraries.
+
+
+Defining a Sealed Class
+
+The declaration of a sealed class is not much complicated. If we want to declare a class as sealed, add a sealed modifier to its declaration. After the class declaration and extends and implements clause, add permits clause. The clause denotes the classes that may extend the sealed class.
+
+It presents the following modifiers and clauses:
+
+    sealed: It can only be extended by its permitted subclasses.
+    non-sealed: It can be extended by unknown subclasses; a sealed class cannot prevent its permitted subclasses from doing this.
+    permits: It allows the subclass to inherit and extend.
+    final: The permitted subclass must be final because it prevents further extensions.
