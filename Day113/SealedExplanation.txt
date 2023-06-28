@@ -17,3 +17,15 @@ It presents the following modifiers and clauses:
     non-sealed: It can be extended by unknown subclasses; a sealed class cannot prevent its permitted subclasses from doing this.
     permits: It allows the subclass to inherit and extend.
     final: The permitted subclass must be final because it prevents further extensions.
+
+
+
+Constraints on Permitted Subclass
+
+If a class is defined as sealed, it enforces the following three limitations on its permitted subclass.
+
+1. All the permitted subclasses must belong to the same module or package as the sealed class. 
+
+2. Every permitted subclass must explicitly extend the sealed class.
+
+3. Every permitted subclass must define a modifier: final, sealed, or non-sealed.
